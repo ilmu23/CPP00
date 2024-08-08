@@ -134,7 +134,7 @@ void	Account::_displayTimestamp(void)
 	std::time_t	time;
 	static char	tstamp[16];
 
-	time = std::time(nullptr);
+	time = std::time(NULL);
 	std::strftime(tstamp, sizeof(tstamp), "%Y%m%d_%H%M%S", std::localtime(&time));
 	std::cout << "[" << tstamp << "]";
 }
